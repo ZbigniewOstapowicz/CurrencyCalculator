@@ -18,6 +18,9 @@ text-align: center;
     font-size: 16px;
     color: red;
 }
+.Calculator__input:focus{
+    outline: none;
+}
 
 .Calculator__btn{
 display: inline-block;
@@ -28,5 +31,17 @@ border-radius: 10px;
 font-size: 16px;
 background-color: #007cb2;
 border: none;
+color: black;
+}
+.Calculator__btn:focus{
+    outline: none;
+    color: black;
+}
+.Calculator__result{
+    margin: 25px 0
 
+}
+
+.Calculator__tabel{
+    margin: 0 auto;
 }

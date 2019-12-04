@@ -10,7 +10,9 @@ class App extends Component {
     date:"",
     InputValue:"",
     InputErr: false,
-    value:""
+    value:"",
+    isLoading: false,
+    err: false,
 
   };
   handelInptChange=e=>{
@@ -28,14 +30,12 @@ class App extends Component {
         InputErr: true,
         value: this.state.InputValue,
       })
-      console.log('zła');  
     }else{
        this.setState({
         value: this.state.InputValue,
         InputValue:"",
         InputErr: false
       })
-      console.log(this.state.value)
     }
 
   }
@@ -43,15 +43,22 @@ class App extends Component {
     this.setState({
       currency: e.target.value,
        value:"",
+       isLoading:true,
     });
-
-      fetch(`https://api.nbp.pl/api/exchangerates/rates/c/${e.target.value}/?format=json`).then(r=>r.json()).then(data=>{
+       fetch(`https://api.nbp.pl/api/exchangerates/rates/c/${e.target.value}/?format=json`).then(r=>r.json()).then(data=>{
         this.setState({
           bid: data.rates[0].bid,
           ask: data.rates[0].ask,
-          date: data.rates[0].effectiveDate
+          date: data.rates[0].effectiveDate,
+          isLoading: false,
         })
-      });
+      }).catch(err=>{
+        this.setState({
+          isLoading:false,
+          err:true,
+        })
+      })
+      
   };
   render() {
     return (
