@@ -12,6 +12,12 @@ const Select = props => {
         <option value="CHF">Frank szwajcarski(CHF)</option>
         <option value="GBP">Funt szterling(GBP)</option>
         <option value="CZK">Korona czeska(CZK)</option>
+        <option value="AUD">Dolar australiski(AUD)</option>
+        <option value="HUF">Forint (Węgry)(HUF)</option>
+        <option value="JPY">Jen (Japonia)(JPY)</option>
+        <option value="DKK">Korona duńska(DKK)</option>
+        <option value="NOK">Korona norweska(NOK)</option>
+        <option value="SEK">Korona szwedzka(SEK)</option>
       </select>
     </div>
   );
