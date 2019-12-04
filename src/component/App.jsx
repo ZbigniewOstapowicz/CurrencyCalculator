@@ -9,13 +9,14 @@ class App extends Component {
     ask:"",
     date:"",
     InputValue:"",
-    InputErr: true,
+    InputErr: false,
     value:""
 
   };
   handelInptChange=e=>{
     this.setState({
-      InputValue:e.target.value
+      InputValue:e.target.value,
+
     })
   }
 
@@ -24,7 +25,8 @@ class App extends Component {
     if(this.state.InputValue<1||!Number(this.state.InputValue)){
       this.setState({
         InputValue:"",
-        InputErr: true
+        InputErr: true,
+        value: this.state.InputValue,
       })
       console.log('zła');  
     }else{
@@ -39,7 +41,8 @@ class App extends Component {
   }
   handelSelect = e => {
     this.setState({
-      currency: e.target.value
+      currency: e.target.value,
+       value:"",
     });
 
       fetch(`https://api.nbp.pl/api/exchangerates/rates/c/${e.target.value}/?format=json`).then(r=>r.json()).then(data=>{
