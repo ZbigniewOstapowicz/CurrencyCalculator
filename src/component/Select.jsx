@@ -4,6 +4,7 @@ const Select = props => {
     <>
       <h1 className="App__text">Wybierz walute:</h1>
       <select value={props.value} onChange={props.onChange}>
+        <option value="" disabled>Wybierz walutę</option>
         <option value="USD">Dolar amreykański(USD)</option>
         <option value="CAD">Dolar kanadyjski(CAD)</option>
         <option value="EUR">Euro(EUR)</option>
