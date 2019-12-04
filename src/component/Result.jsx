@@ -1,5 +1,6 @@
 import React from "react";
 import Calculator from "./Calculator";
+import "../style/Result.css";
 
 const Result = props => {
   const { currency, bid, ask, date, InputValue, InputErr, value} = props.exchangeRate;
@@ -8,13 +9,13 @@ const Result = props => {
   if (date) {
     return (content = (
       <div className="Result">
-        <table>
+        <table className="Result__table">
           <thead>
             <tr>
-              <th> Kurs walut z dnia:{date}</th>
+              <th colSpan="3"> Kurs walut z dnia:{date}</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="Result__tbody">
             <tr>
               <th>Waluta</th>
               <th>Skup</th>

@@ -1,14 +1,14 @@
 import React from 'react';
-
+import "../style/Calculator.css";
 const Calculator = props => {
      let content = "";
   if (!props.InputErr&&props.value) {
     content = (
-      <div className="Result">
+      <div className="Calculator__result">
         <table>
           <tbody>
             <tr>
-    <td>{props.value} {props.currency}</td>
+    <          td>{props.value} {props.currency}</td>
               <td>sprzedaż za : {(props.bid*props.value).toFixed(2)} zł</td>
               <td>kupisz za : {(props.ask*props.value).toFixed(2)} zł</td>
             </tr>
@@ -22,9 +22,9 @@ const Calculator = props => {
     )
   }
     return ( <div className="Calculator">
-        <form className='Caclutaor__form' onSubmit={props.BtnClick}>
-            <input onChange={props.InputChange} value={props.InputValue}  placeholder={`Wpisz wartość w ${props.currency}`}/>
-            <button>Przelicz</button>
+        <form  onSubmit={props.BtnClick}>
+            <input className='Calculator__input' onChange={props.InputChange} value={props.InputValue}  placeholder={`Wpisz wartość w ${props.currency}`}/>
+            <button className="Calculator__btn">Przelicz</button>
         </form>
         {content}
 

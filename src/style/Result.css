@@ -1,0 +1,12 @@
+.Result{
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.Result__table{
+    margin: 0 auto;
+}
+
+.Result__tbody{
+    font-size: 20px;
+}
