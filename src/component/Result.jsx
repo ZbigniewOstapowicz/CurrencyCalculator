@@ -1,6 +1,7 @@
 import React from "react";
 import Calculator from "./Calculator";
 import "../style/Result.css";
+import Svg from "../img/loading.svg"
 
 
 const Result = props => {
@@ -32,9 +33,9 @@ const Result = props => {
         <Calculator currency={currency} bid={bid} ask={ask} InputChange={props.InputChange} BtnClick={props.BtnClick} InputValue={InputValue} InputErr={InputErr} value={value}></Calculator>
       </div>
     )
-  }else if(!date&&isLoading){
+  }else if(isLoading){
     content=(
-      <p>loading</p>
+      <img src={Svg} alt="loading" className="Result__loading"/>
     )
   } else if(err){
     content=(
