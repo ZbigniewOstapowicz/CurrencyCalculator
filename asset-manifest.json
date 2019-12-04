@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/CurrencyCalculator/./static/css/main.6f4b8424.chunk.css",
-    "main.js": "/CurrencyCalculator/./static/js/main.c41c3729.chunk.js",
-    "main.js.map": "/CurrencyCalculator/./static/js/main.c41c3729.chunk.js.map",
+    "main.css": "/CurrencyCalculator/./static/css/main.65f7547c.chunk.css",
+    "main.js": "/CurrencyCalculator/./static/js/main.485baa02.chunk.js",
+    "main.js.map": "/CurrencyCalculator/./static/js/main.485baa02.chunk.js.map",
     "runtime-main.js": "/CurrencyCalculator/./static/js/runtime-main.6383d509.js",
     "runtime-main.js.map": "/CurrencyCalculator/./static/js/runtime-main.6383d509.js.map",
-    "static/js/2.29c6d527.chunk.js": "/CurrencyCalculator/./static/js/2.29c6d527.chunk.js",
-    "static/js/2.29c6d527.chunk.js.map": "/CurrencyCalculator/./static/js/2.29c6d527.chunk.js.map",
+    "static/js/2.c3fb0927.chunk.js": "/CurrencyCalculator/./static/js/2.c3fb0927.chunk.js",
+    "static/js/2.c3fb0927.chunk.js.map": "/CurrencyCalculator/./static/js/2.c3fb0927.chunk.js.map",
     "index.html": "/CurrencyCalculator/./index.html",
-    "precache-manifest.ba0e178fde5cc3861edbeaf6f2dac20d.js": "/CurrencyCalculator/./precache-manifest.ba0e178fde5cc3861edbeaf6f2dac20d.js",
+    "precache-manifest.c2002aa50018ccd6c1c0e83a69a99078.js": "/CurrencyCalculator/./precache-manifest.c2002aa50018ccd6c1c0e83a69a99078.js",
     "service-worker.js": "/CurrencyCalculator/./service-worker.js",
-    "static/css/main.6f4b8424.chunk.css.map": "/CurrencyCalculator/./static/css/main.6f4b8424.chunk.css.map"
+    "static/css/main.65f7547c.chunk.css.map": "/CurrencyCalculator/./static/css/main.65f7547c.chunk.css.map",
+    "static/media/loading.svg": "/CurrencyCalculator/./static/media/loading.70897f5a.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.6383d509.js",
-    "static/js/2.29c6d527.chunk.js",
-    "static/css/main.6f4b8424.chunk.css",
-    "static/js/main.c41c3729.chunk.js"
+    "static/js/2.c3fb0927.chunk.js",
+    "static/css/main.65f7547c.chunk.css",
+    "static/js/main.485baa02.chunk.js"
   ]
 }
