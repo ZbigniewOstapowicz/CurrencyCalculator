@@ -23,7 +23,7 @@ const Calculator = props => {
       </div>
     );
   } else if (props.value) {
-    content = <h5>wprowadz wartośc liczbową wieksza od 0</h5>;
+    content = <h5>wprowadz wartość liczbową wieksza od 0</h5>;
   }
   return (
     <div className="Calculator">
