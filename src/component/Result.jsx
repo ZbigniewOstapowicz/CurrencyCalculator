@@ -13,7 +13,7 @@ const Result = props => {
         <table className="Result__table">
           <thead>
             <tr>
-              <th colSpan="3"> Kurs walut z dnia:{date}</th>
+              <th colSpan="3"> Kurs walut z dnia: {date}</th>
             </tr>
           </thead>
           <tbody className="Result__tbody">
