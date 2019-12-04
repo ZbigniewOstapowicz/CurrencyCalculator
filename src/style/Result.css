@@ -10,3 +10,7 @@
 .Result__tbody{
     font-size: 20px;
 }
+
+.Result__loading{
+    margin-top: 40px;
+}

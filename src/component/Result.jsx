@@ -35,7 +35,7 @@ const Result = props => {
     )
   }else if(isLoading){
     content=(
-      <img src={Svg} alt="loading"/>
+      <img src={Svg} alt="loading" className="Result__loading"/>
     )
   } else if(err){
     content=(
